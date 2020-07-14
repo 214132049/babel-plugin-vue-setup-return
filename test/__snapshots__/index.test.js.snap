@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`example1 1`] = `
+"import { ref } from '@vue/composition-api';
+export default {
+  name: 'myComponent',
+
+  setup() {
+    const name = ref('名字');
+    return {
+      name: name
+    };
+  }
+
+};"
+`;
+
+exports[`example2 1`] = `
+"import { ref } from '@vue/composition-api';
+export default {
+  name: 'myComponent',
+
+  setup() {
+    const name = ref('名字');
+    return {
+      name: name
+    };
+  }
+
+};"
+`;
+
+exports[`example3 1`] = `
+"import { ref } from '@vue/composition-api';
+export default {
+  name: 'myComponent',
+
+  setup() {
+    const name = ref('名字');
+    return {
+      name: name
+    };
+  }
+
+};"
+`;
+
+exports[`example4 1`] = `
+"import { ref } from '@vue/composition-api';
+export default {
+  name: 'myComponent',
+
+  setup() {
+    const name = ref('名字');
+    return {
+      name: name
+    };
+  }
+
+};"
+`;
+
+exports[`example5 1`] = `
+"import { ref } from '@vue/composition-api';
+export default {
+  name: 'myComponent',
+
+  setup() {
+    const name = ref('名字');
+    return {
+      name: name
+    };
+  }
+
+};"
+`;
+
+exports[`example6 1`] = `
+"import { ref } from '@vue/composition-api';
+export default {
+  name: 'myComponent',
+
+  setup() {
+    const name = ref('名字');
+    return () => <div>{name}</div>;
+  }
+
+};"
+`;
+
+exports[`example7 1`] = `
+"import { ref } from '@vue/composition-api';
+export default {
+  name: 'myComponent',
+  filters: {
+    setup(__RE__name) {
+      console.log(name);
+      return {};
+    }
+
+  },
+
+  setup() {
+    const name = ref('名字');
+    const push = computed(() => name.value);
+    return function () {
+      h('div', null, push);
+    };
+  }
+
+};"
+`;
+
+exports[`example8 1`] = `
+"import { ref } from '@vue/composition-api';
+const options = {
+  name: 'myComponent',
+  filters: {
+    setup(__RE__name) {
+      console.log(__RE__name);
+    }
+
+  },
+
+  setup() {
+    const name = ref('名字');
+    const push = computed(() => name.value);
+    return {
+      name: name,
+      push: push
+    };
+  }
+
+};
+export default options;"
+`;
+
+exports[`example8 2`] = `
+"import { ref } from '@vue/composition-api';
+const options = {
+  name: 'myComponent',
+  filters: {
+    setup(_$$_name) {
+      console.log(_$$_name);
+    }
+
+  },
+
+  setup() {
+    const name = ref('名字');
+    const push = computed(() => name.value);
+    return {
+      name: name,
+      push: push
+    };
+  }
+
+};
+export default options;"
+`;
