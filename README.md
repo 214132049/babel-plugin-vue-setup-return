@@ -4,6 +4,8 @@
 
 Automatic return statement injection through variable prefix for vue composition api setup
 
+**!!!note: When the function name is setup, all the matching inside the function will be converted**
+
 ## Usage
 
 ```shell script
@@ -16,7 +18,7 @@ In your babel.config.js:
 ``` javascript
 plugins: [
   [
-    vueSetupReturn, {
+    '@babel/vue-setup-return', {
       prefix: '_$$_'  // variable prefix, default: __RE__
     }
   ]

@@ -19,14 +19,12 @@ exports[`example2 1`] = `
 "import { ref } from '@vue/composition-api';
 export default {
   name: 'myComponent',
-
-  setup() {
+  setup: function () {
     const name = ref('名字');
     return {
       name: name
     };
   }
-
 };"
 `;
 
@@ -89,8 +87,16 @@ export default {
 `;
 
 exports[`example7 1`] = `
-"import { ref } from '@vue/composition-api';
-export default {
+"\\"use strict\\";
+
+Object.defineProperty(exports, \\"__esModule\\", {
+  value: true
+});
+exports.default = void 0;
+
+var _compositionApi = require(\\"@vue/composition-api\\");
+
+var _default = {
   name: 'myComponent',
   filters: {
     setup(__RE__name) {
@@ -101,14 +107,20 @@ export default {
   },
 
   setup() {
-    const name = ref('名字');
+    const name = (0, _compositionApi.ref)('0');
     const push = computed(() => name.value);
+
+    const add = function () {
+      name.value += 1;
+    };
+
     return function () {
       h('div', null, push);
     };
   }
 
-};"
+};
+exports.default = _default;"
 `;
 
 exports[`example8 1`] = `
@@ -117,7 +129,8 @@ const options = {
   name: 'myComponent',
   filters: {
     setup(__RE__name) {
-      console.log(__RE__name);
+      console.log(name);
+      return {};
     }
 
   },
@@ -141,7 +154,8 @@ const options = {
   name: 'myComponent',
   filters: {
     setup(_$$_name) {
-      console.log(_$$_name);
+      console.log(name);
+      return {};
     }
 
   },

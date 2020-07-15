@@ -26,7 +26,7 @@ it('example2', function() {
     
     export default {
       name: 'myComponent',
-      setup () {
+      setup: function () {
         const __RE__name = ref('名字')
         
         return {
@@ -142,8 +142,11 @@ it('example7', function() {
         }
       },
       setup () {
-        const __RE__name = ref('名字')
+        const __RE__name = ref('0')
         const __RE__push = computed(() => __RE__name.value)
+        const __RE__add = function() {
+          __RE__name.value += 1
+        }
         return function () {
           h('div', null, push)
         }
@@ -151,6 +154,10 @@ it('example7', function() {
     }
   `;
   const { code } = babel.transform(example, {
+    filename: 'index.js',
+    presets: [
+      '@vue/app'
+    ],
     plugins: [
       vueSetupReturn
     ]
