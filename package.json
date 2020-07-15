@@ -1,5 +1,5 @@
 {
-  "name": "@babel/plugin-vue-setup-return",
+  "name": "babel-plugin-vue-setup-return",
   "version": "0.0.1",
   "description": "Automatic inject return for vue composition api setup. ",
   "main": "lib/index.js",
