@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Automatic inject return for vue composition api setup. ",
   "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/214132049/babel-plugin-vue-setup-return.git"
+  },
   "directories": {
     "lib": "lib",
     "test": "test"
