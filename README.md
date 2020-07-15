@@ -19,7 +19,7 @@ In your babel.config.js:
 plugins: [
   [
     'vue-setup-return', {
-      prefix: '_RE_'
+      prefix: '_RE_'  // prefix defult __RE__
     }
   ]
 ]
